@@ -1,6 +1,5 @@
 body {
   font-family: 'Noto Sans Arabic', sans-serif;
-  height: 10000px;
 }
 :root {
   --main-color: #1479dd;
@@ -237,6 +236,8 @@ body {
 }
 .skills .skill-content .progress .progress-bar {
   background-color: var(--main-color);
+  width: 0;
+  transition: all 0.7s ease-in-out;
 }
 .skills .skill-content span {
   background-color: var(--main-color);
@@ -294,6 +295,7 @@ body {
   background-color: var(--white-color);
   padding: 15px 20px;
   transition: var(--main-trans);
+  transform: translateX(-150%);
 }
 .resume .timeline-content .info .year {
   background-color: #476986;
@@ -319,6 +321,9 @@ body {
 .resume .timeline-content .info h3 {
   color: var(--main-color);
   font-size: 1.1rem;
+}
+.resume .timeline-content.right-content .info {
+  transform: translateX(150%);
 }
 
 /* Start Portfolio */
@@ -379,6 +384,71 @@ body {
   margin: 11px auto;
   background-color: var(--black2-color);
 }
+
+/* Start Contact */
+.contact {
+  padding-top: var(--section-padding-top);
+  padding-bottom: var(--section-padding-bottom);
+}
+.contact .contact-content {
+  margin-top: 70px;
+}
+.contact-content .contact-form textarea {
+  width: 100%;
+  height: 200px;
+}
+.contact-content .contact-info {
+  margin-bottom: 25%;
+}
+.contact-content .contact-info h4 {
+  color: var(--main-color);
+}
+.contact-content .contact-info span {
+  font-size: 0.9rem;
+  color: #FFF;
+  background-color: var(--black2-color);
+}
+.contact-form label {
+  color: var(--black2-color);
+}
+.contact-form div:last-child div div label,
+.contact-form input[type="submit"]  {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  transition: var(--main-trans);
+}
+.contact-form div:last-child div div:hover label,
+.contact-form div:hover input[type="submit"]  {
+  background-color: var(--black2-color);
+  color: var(--white-color);
+}
+/* Start Footer */
+footer {
+  padding: 1.7rem;
+  margin-top: var(--section-padding-top);
+  background-color: var(--black2-color);
+  color: var(--white-color);
+  font-family: 'Poppins', sans-serif;
+}
+footer .copy-rights span:first-child {
+  margin-right: 15px;
+}
+footer .copy-rights span:last-child {
+  margin-right: 15px;
+  color: #dfe616;
+  font-weight: 500;
+}
+footer .social a svg {
+  width: 31px;
+  height: 31px;
+  color: #B6D6E6;
+  padding-right: 0.5rem;
+  transition: var(--main-trans);
+}
+footer .social a:hover svg {
+  animation: bouncing 1.3s 5;
+}
+
 
 /* Start Animations  */
 @keyframes up-move {
