@@ -1,7 +1,4 @@
-body {
-  font-family: 'Noto Sans Arabic', sans-serif;
-  position: relative;
-}
+body {font-family: 'Noto Sans Arabic', sans-serif;position: relative;}
 :root {
   --main-color: #1479dd;
   --white-color: #F4F4F4;
@@ -38,9 +35,7 @@ body {
   transition: var(--main-trans);
   display: none;
 }
-.settings .options.open {
-  display: block;
-}
+.settings .options.open {display: block;}
 .settings .options .color-list li {
   width: 25px;
   height: 25px;
@@ -49,24 +44,12 @@ body {
   opacity: 0.5;
   cursor: pointer;
 }
-.settings .options .color-list li.active {
-  opacity: 1;
-}
-.settings .options .color-list li:first-child {
-  background-color: #1479dd;
-}
-.settings .options .color-list li:nth-child(2) {
-  background-color: #3db5b5;
-}
-.settings .options .color-list li:nth-child(3) {
-  background-color: #bd4276;
-}
-.settings .options .color-list li:nth-child(4) {
-  background-color: #6b55d5;
-}
-.settings .options .color-list li:last-child {
-  background-color: #16a4e9;
-}
+.settings .options .color-list li.active {opacity: 1;}
+.settings .options .color-list li:first-child {background-color: #1479dd;}
+.settings .options .color-list li:nth-child(2) {background-color: #3db5b5;}
+.settings .options .color-list li:nth-child(3) {background-color: #bd4276;}
+.settings .options .color-list li:nth-child(4) {background-color: #6b55d5;}
+.settings .options .color-list li:last-child {background-color: #16a4e9;}
 
 /* Start Main Title */
 .main-title {
@@ -90,13 +73,9 @@ body {
   transition: 0.5s ease-in-out;
 }
 @media(max-width: 576px) {
-  .main-title h2 {
-    font-size: 2.3rem;
-  }
+  .main-title h2 {font-size: 2.3rem;}
 }
-.main-title h2:hover {
-  color: var(--white-color);
-}
+.main-title h2:hover {color: var(--white-color);}
 .main-title h2::before {
   content: "";
   position: absolute;
@@ -119,27 +98,13 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-.main-title h2:hover::after {
-  z-index: -1;
-  animation: up-move 0.7s linear forwards;
-}
-.main-title p {
-  line-height: 2;
-  color: var(--p-color);
-}
+.main-title h2:hover::after {z-index: -1;animation: up-move 0.7s linear forwards;}
+.main-title p {line-height: 2;color: var(--p-color);}
 
 /* Start Navbar */
-.navbar {
-  background-color: var(--black2-color);
-}
-.navbar .navbar-brand {
-  color: var(--white-color);
-  font-weight: 500;
-}
-.navbar .nav-item .nav-link {
-  color: var(--white-color);
-  font-weight: 500;
-}
+.navbar {background-color: var(--black2-color);}
+.navbar .navbar-brand {color: var(--white-color);font-weight: 500;}
+.navbar .nav-item .nav-link {color: var(--white-color);font-weight: 500;}
 .navbar .navbar-nav .nav-link.active,
 .navbar .navbar-nav .nav-link:focus,
 .navbar .navbar-nav .nav-link:hover {
@@ -147,16 +112,9 @@ body {
   background-color: var(--white-color);
   border-radius: 5px;
 }
-.navbar .nav-item .nav-link svg {
-  margin-right: 5px;
-}
-.navbar .navbar-toggler {
-  color: var(--white-color);
-  border-color: var(--white-color);
-}
-.navbar .navbar-toggler:focus {
-  box-shadow: none;
-}
+.navbar .nav-item .nav-link svg {margin-right: 5px;}
+.navbar .navbar-toggler {color: var(--white-color);border-color: var(--white-color);}
+.navbar .navbar-toggler:focus {box-shadow: none;}
 
 /* Start Home Section */
 .home {
@@ -185,14 +143,10 @@ body {
   font-size: 2rem;
   font-weight: 400;
   font-family: 'ubuntu', sans-serif;
-  color: var(--white-color);
-  background-color: var(--main-color);
-  margin: 20px auto;
-  width: fit-content;
+  color: var(--main-color);
   padding: 7px;
-  border-radius: 5px;
   transition: var(--main-trans);
-  animation: bouncing 1.7s infinite;
+  animation: flashing2 7s infinite;
 }
 .home span {
   font-size: 1.5rem;
@@ -200,56 +154,27 @@ body {
   font-weight: 500;
   display: inline-block;
 }
-.contact-links li a {
-  color: var(--main-color);
-}
-.contact-links li a svg {
-  font-size: 4rem;
-  transition: 1.3s;
-}
+.contact-links li a {color: var(--main-color);}
+.contact-links li a svg {font-size: 4rem;transition: 1.3s;}
 @media(max-width: 576px) {
-  .contact-links li a svg {
-    width: 2.7rem;
-  }
+  .contact-links li a svg {width: 2.7rem;}
 }
-.contact-links li a svg:hover {
-  color: #556471;
-  transform: rotate(360deg) scale(1.3);
-}
+.contact-links li a svg:hover {color: #556471;transform: rotate(360deg) scale(1.3);}
 
 /* Start About Me Section */
-.about {
-  padding-top: var(--section-padding-top);
-  padding-bottom: var(--section-padding-bottom);
-}
-.about .image img {
-  width: 100%;
-  height: 100%;
-}
-.about .about-content {
-  margin-top: 100px;
-}
-.about .about-info h2 {
-  color: var(--main-color);
-}
-.about .about-info p {
-  color: var(--black-color);
-  line-height: 2;
-}
-.about .about-info ul li {
-  font-family: 'ubuntu', sans-serif;
-}
+.about {padding-top: var(--section-padding-top);padding-bottom: var(--section-padding-bottom);}
+.about .image img {width: 100%;height: 100%;}
+.about .about-content {margin-top: 100px;}
+.about .about-info h2 {color: var(--main-color);}
+.about .about-info p {color: var(--black-color);line-height: 2;}
+.about .about-info ul li {font-family: 'ubuntu', sans-serif;}
 .about .about-info ul li svg {
   color: var(--main-color);
   margin-right: 7px;
   font-size: 1.5rem;
 }
-.about .about-info ul li span {
-  font-weight: 600;
-}
-.about .hobbies h2 {
-  margin-top: 15px;
-}
+.about .about-info ul li span {font-weight: 600;}
+.about .hobbies h2 {margin-top: 15px;}
 .about .hobbies svg {
   color: #2b5f8c;
   font-size: 2.5rem;
@@ -257,35 +182,23 @@ body {
   margin-bottom: 25px;
   transition: var(--main-trans);
 }
-.about .hobbies svg:hover {
-  color: var(--main-color);
-  transform: rotate(-5deg) scale(1.1);
-}
-.about .hobbies p {
-  color: #1B1C1E;
-}
+.about .hobbies svg:hover {color: var(--main-color);transform: rotate(-5deg) scale(1.1);}
+.about .hobbies p {color: #1B1C1E;}
 
 /* Start Skills Section */
-.skills {
-  padding-top: var(--section-padding-top);
-  padding-bottom: var(--section-padding-bottom);
-}
-.skills .skills-info {
-  margin-top: 100px;
-}
+.skills {padding-top: var(--section-padding-top);padding-bottom: var(--section-padding-bottom);}
+.skills .skills-info {margin-top: 100px;}
 .skills .skills-info h2 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   background-color: #476986;
   color: var(--white-color);
   margin-top: 25px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   margin-left: 20px;
   padding: 3px 5px;
   border-radius: 5px;
 }
-.skills .skills-info h2 svg {
-  margin-right: 7px;
-}
+.skills .skills-info h2 svg {margin-right: 7px;}
 .skills .skills-info .progress-title span {
   background-color: #476986;
   color: var(--white-color);
@@ -295,13 +208,8 @@ body {
   font-weight: 500;
   margin-right: 35px;
 }
-.skills .skill-content {
-  padding: 5px 15px;
-}
-.skills .skill-content .progress {
-  background-color: #c1cbd5;
-  height: 15px;
-}
+.skills .skill-content {padding: 5px 15px;}
+.skills .skill-content .progress {background-color: #c1cbd5;height: 9px;}
 .skills .skill-content .progress .progress-bar {
   background-color: var(--main-color);
   width: 0;
@@ -335,10 +243,7 @@ body {
   left: 0;
   z-index: -1;
 }
-.resume .timeline {
-  margin-top: 100px;
-  position: relative;
-}
+.resume .timeline {margin-top: 100px;position: relative;}
 .resume .timeline-content {
   position: relative;
   padding-right: 2rem;
@@ -354,9 +259,7 @@ body {
   top: 0;
 }
 @media(max-width: 579px) {
-  .resume .timeline-content::before {
-    display: none;
-  }
+  .resume .timeline-content::before {display: none;}
 }
 .resume .timeline-content .info {
   position: relative;
@@ -372,9 +275,7 @@ body {
   padding: 5px 10px;
   font-size: 1.3rem;
 }
-.resume .timeline-content .info .year svg {
-  margin-right: 5px;
-}
+.resume .timeline-content .info .year svg {margin-right: 5px;}
 .resume .timeline-content .info .dot {
   position: absolute;
   left: -30px;
@@ -385,10 +286,7 @@ body {
   color: var(--main-color);
   border-radius: 50%;
 }
-.resume .timeline-content .info h3 {
-  color: var(--main-color);
-  font-size: 1.1rem;
-}
+.resume .timeline-content .info h3 {color: var(--main-color);font-size: 1.1rem;}
 
 /* Start Portfolio */
 .portfolio {
@@ -396,9 +294,7 @@ body {
   padding-bottom: var(--section-padding-bottom);
   position: relative;
 }
-.portfolio .port-info {
-  margin-top: 70px
-}
+.portfolio .port-info {margin-top: 70px}
 .port-info .card {
   margin-bottom: 1.5rem;
   position: relative;
@@ -418,31 +314,17 @@ body {
   border-radius: 5px;
   z-index: 2;
 }
-.port-info .card:hover::before {
-  animation: flashing 0.7s;
-}
-.port-info .card img {
-  width: 300px;
-  height: 300px;
-}
+.port-info .card:hover::before {animation: flashing 0.7s;}
+.port-info .card img {width: 300px;height: 300px;}
 .port-info .card .card-title {
   color: var(--main-color);
   font-size: 1.5rem;
   transition: var(--main-trans);
 }
-.port-info .card .card-title:hover {
-  animation: moving 0.7s 5;
-}
-.port-info .card .card-text {
-  color: var(--black-color);
-}
-.port-info .card .port-link {
-  font-size: 2rem;
-  color: var(--black2-color);
-}
-.port-info .card .port-link:hover svg {
-  animation: bouncing 1.7s infinite;
-}
+.port-info .card .card-title:hover {animation: moving 0.7s 5;}
+.port-info .card .card-text {color: var(--black-color);}
+.port-info .card .port-link {font-size: 2rem;color: var(--black2-color);}
+.port-info .card .port-link:hover svg {animation: bouncing 1.7s infinite;}
 .port-info .card .card-tag {
   width: fit-content;
   margin: 11px auto;
@@ -450,31 +332,17 @@ body {
 }
 
 /* Start Contact */
-.contact {
-  padding-top: var(--section-padding-top);
-  padding-bottom: var(--section-padding-bottom);
-}
-.contact .contact-content {
-  margin-top: 70px;
-}
-.contact-content .contact-form textarea {
-  width: 100%;
-  height: 200px;
-}
-.contact-content .contact-info {
-  margin-bottom: 25%;
-}
-.contact-content .contact-info h4 {
-  color: var(--main-color);
-}
+.contact {padding-top: var(--section-padding-top);padding-bottom: var(--section-padding-bottom);}
+.contact .contact-content {margin-top: 70px;}
+.contact-content .contact-form textarea {width: 100%;height: 200px;}
+.contact-content .contact-info {margin-bottom: 25%;}
+.contact-content .contact-info h4 {color: var(--main-color);}
 .contact-content .contact-info span {
   font-size: 0.9rem;
   color: #FFF;
   background-color: var(--black2-color);
 }
-.contact-form label {
-  color: var(--black2-color);
-}
+.contact-form label {color: var(--black2-color);}
 .contact-form div:last-child div div label,
 .contact-form input[type="submit"]  {
   background-color: var(--main-color);
@@ -482,10 +350,7 @@ body {
   transition: var(--main-trans);
 }
 .contact-form div:last-child div div:hover label,
-.contact-form div:hover input[type="submit"]  {
-  background-color: var(--black2-color);
-  color: var(--white-color);
-}
+.contact-form div:hover input[type="submit"]  {background-color: var(--black2-color);color: var(--white-color);}
 /* Start Footer */
 footer {
   padding: 1.7rem;
@@ -494,9 +359,7 @@ footer {
   color: var(--white-color);
   font-family: 'Poppins', sans-serif;
 }
-footer .copy-rights span:first-child {
-  margin-right: 15px;
-}
+footer .copy-rights span:first-child {margin-right: 15px;}
 footer .copy-rights span:last-child {
   margin-right: 15px;
   color: #dfe616;
@@ -509,9 +372,7 @@ footer .social a svg {
   padding-right: 0.5rem;
   transition: var(--main-trans);
 }
-footer .social a:hover svg {
-  animation: bouncing 1.3s 5;
-}
+footer .social a:hover svg {color: var(--white-color);animation: bouncing 1.3s 5;}
 
 /* Start Scroll To Top Button */
 .up {
@@ -525,12 +386,8 @@ footer .social a:hover svg {
   display: none;
   z-index: 99999;
 }
-.show {
-  display: block;
-}
-.up:hover {
-  color: var(--main-color);
-}
+.show {display: block;}
+.up:hover {color: var(--main-color);}
 
 /* Start Animations  */
 @keyframes up-move {
@@ -548,35 +405,27 @@ footer .social a:hover svg {
   }
 }
 @keyframes flashing {
-  0%, 40% {
-    opacity: 1;
-  }
+  0%, 40% {opacity: 1;}
   100% {
     opacity: 0;
     width: 100%;
     height: 100%;
   }
 }
+@keyframes flashing2 {
+  0%, 40% {opacity: 1;}
+  100% {opacity: 0;}
+}
 @keyframes bouncing {
-  0%, 10%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40%, 60% {
-    transform: translateY(-15px);
-  }
+  0%, 10%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40%, 60% {transform: translateY(-15px);}
 }
 @keyframes moving {
-  0%, 100% {
-    transform: translateX(5px);
-  }
-  50% {
-    transform: translateX(-5px);
-  }
+  0%, 100% {transform: translateX(5px);}
+  50% {transform: translateX(-5px);}
 }
 
-p, span, h1, h2, h3, h4, h5 {
-  font-family: 'Poppins', sans-serif;
-}
+p, span, h1, h2, h3, h4, h5 {font-family: 'Poppins', sans-serif;}
 
 /*
     *font-family: 'Cabin', sans-serif;

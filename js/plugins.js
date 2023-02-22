@@ -70,13 +70,13 @@ developer.textContent = "Frontend Developer";
 
 function randomText() {
   if(textOption === true) {
-    let textArray = ["Frontend Developer", "Backend Developer", "Fullstack"];
+    let textArray = ["Frontend Developer", "Backend Developer", "Fullstack Developer"];
     textInterval = setInterval(() => {
       let randText = Math.floor(Math.random() * textArray.length);
 
       developer.textContent = textArray[randText];
       
-    }, 1500);
+    }, 7000);
   } else {
     clearInterval(textInterval);
   }
